@@ -1,6 +1,6 @@
 # DataWhale_Study_Wp
 DataWhale_Study_Wp
-## Task 1 
+## Task 1 数据集下载和探索
 1. 数据集
 数据集：中、英文数据集各一份
 
@@ -19,7 +19,7 @@ THUCNews数据子集：https://pan.baidu.com/s/1hugrfRu 密码：qfud
 4. 学习召回率、准确率、ROC曲线、AUC、PR曲线这些基本概念
 参考1：机器学习之类别不平衡问题 (2) —— ROC和PR曲线_慕课手记 {https://www.imooc.com/article/48072}
 
-##Task2 特征提取 
+## Task2 特征提取 
 1. 基本文本处理技能
 1.1 分词的概念（分词的正向最大、逆向最大、双向最大匹配法）；
 1.2 词、字符频率统计；（可以使用Python中的collections.Counter模块，也可以自己寻找其他好用的库）
