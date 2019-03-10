@@ -1,5 +1,5 @@
-# DataWhale_Study_Wp
-DataWhale_Study_Wp
+# DataWhale_Study_Wp 
+DataWhale_Study_Wp https://github.com/km1994/DataWhale_Study_Wp
 ## Task 1 数据集下载和探索
 1. 数据集
 数据集：中、英文数据集各一份
