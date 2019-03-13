@@ -224,28 +224,27 @@ def text_features(train_data_list, test_data_list, feature_words):
 if __name__ == "__main__":
     #文件读取
     train_file_path = "../resource/THUCNews_ch/t1_cut_words_cnews.train.txt"
-    train_list, train_labels = read_file(train_file_path,demo_flag = True)
+    train_list, train_labels = read_file(train_file_path,demo_flag = False)
     print("train_list:{0},train_labels{1}".format(len(train_list),len(train_labels)))
-    print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
+    # print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
 
     test_file_path = "../resource/THUCNews_ch/t1_cut_words_cnews.test.txt"
-    test_list, test_labels = read_file(test_file_path, demo_flag=True)
+    test_list, test_labels = read_file(test_file_path, demo_flag=False)
     print("test_list:{0},test_labels{1}".format(len(test_list), len(test_labels)))
-    print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
+    # print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
 
     # 统计词频
     all_words_list = count_words(train_list)
-    print(f"all_words_list:{all_words_list}")
+    # print(f"all_words_list:{all_words_list}")
 
     # 选取1000个特征
-    deleteN = 1000
+    deleteN = 5000
     feature_words = words_dict(all_words_list, deleteN)
-    print("feature_words：{0}".format(feature_words))
+    # print("feature_words：{0}".format(feature_words))
 
     # 计算特征向量
     train_feature_list, test_feature_list = text_features(train_list, test_list, feature_words)
-
-    print("train_feature_list:{0}".format(train_feature_list))
+    # print("train_feature_list:{0}".format(train_feature_list))
 
     feature_dict_filename = "../resource/THUCNews_ch/t2_feature_words_cnews.txt"
     write_feature_dict_file(feature_dict_filename, feature_words)

@@ -286,17 +286,17 @@ def text_features_by_mutual_info(train_data,train_y,test_data,max_features=6000)
 if __name__ == "__main__":
     #文件读取
     train_file_path = "../resource/THUCNews_ch/t1_cut_words_cnews.train.txt"
-    train_list, train_labels = read_file(train_file_path,demo_flag = True)
+    train_list, train_labels = read_file(train_file_path,demo_flag = False)
     print("train_list:{0},train_labels{1}".format(len(train_list),len(train_labels)))
-    print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
+    #print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
 
     test_file_path = "../resource/THUCNews_ch/t1_cut_words_cnews.test.txt"
-    test_list, test_labels = read_file(test_file_path, demo_flag=True)
+    test_list, test_labels = read_file(test_file_path, demo_flag=False)
     print("test_list:{0},test_labels{1}".format(len(test_list), len(test_labels)))
-    print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
+    #print("train_list:{0},train_labels{1}".format(train_list[0:1], train_labels[0:1]))
 
     # 选取1000个特征
-    deleteN = 1000
+    deleteN = 5000
 
     # 特征提取 先转成tfidf，然后用互信息选取 deleteN 个特征
     train_feature_list,train_labels, test_feature_list= text_features_by_mutual_info(train_data = train_list,train_y = train_labels,test_data = test_list,max_features = deleteN)

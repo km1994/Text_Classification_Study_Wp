@@ -142,11 +142,11 @@ def jieba_cut_word(data_list,stopword_path,cut_word_to_str_flag = True):
 if __name__ == "__main__":
     #文件读取
     train_file_path = "../resource/THUCNews_ch/cnews.train.txt"
-    train_list, train_labels = read_file(train_file_path,demo_flag = True)
+    train_list, train_labels = read_file(train_file_path,demo_flag = False)
     #print("train_list:{0},train_labels{1}".format(len(train_list),len(train_labels)))
 
     test_file_path = "../resource/THUCNews_ch/cnews.test.txt"
-    test_list, test_labels = read_file(test_file_path, demo_flag=True)
+    test_list, test_labels = read_file(test_file_path, demo_flag=False)
     #print("test_list:{0},test_labels{1}".format(len(test_list), len(test_labels)))
 
     # 分词处理

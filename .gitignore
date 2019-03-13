@@ -20,3 +20,4 @@ task/.idea/*
 *.gz
 *.bz2
 *.word
+*.pkl
