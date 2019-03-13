@@ -12,3 +12,11 @@
 *.csv
 task/.idea/*
 *.xml
+*.zip
+*.rar
+*.bin
+*.vec
+*.model
+*.gz
+*.bz2
+*.word

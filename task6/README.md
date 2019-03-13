@@ -1,4 +1,4 @@
-
+﻿
 ## Task6 简单神经网络  
 
 1. 文本表示：从one-hot到word2vec。
@@ -26,4 +26,6 @@ fasttext2：
 fasttext3 其中的参考：
 [fastText源码分析以及使用 — 相依](https://jepsonwong.github.io/2018/05/02/fastText/)
 [A Neural Network Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.44849&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+fasttext4 [fastText 实现]{https://github.com/ruanyangry/fastText-Study}
  
