@@ -1,6 +1,6 @@
 # coding: utf-8
 
-import sys
+
 from collections import Counter
 import jieba
 import numpy as np
@@ -8,6 +8,7 @@ import numpy as np
 '''
     工具包 begin
 '''
+import sys
 if sys.version_info[0] > 2:
     is_py3 = True
 else:

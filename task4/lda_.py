@@ -71,8 +71,11 @@ def read_file(filename,demo_flag = False):
     return contents, labels
 
 # 获取训练数据，测试数据
-train_data,labels = read_file(filename='../resource/THUCNews_ch/t1_cut_words_cnews.train_demo.txt',demo_flag = False)
+train_data,train_labels = read_file(filename='../resource/THUCNews_ch/t1_cut_words_cnews.train_demo.txt')
 train_data = np.array(train_data)
+
+test_data,test_labels = read_file(filename='../resource/THUCNews_ch/t1_cut_words_cnews.test_demo.txt')
+test_data = np.array(test_data)
 #
 # test_data = []
 # with open('./after_preprocess_testdata.txt',encoding='utf-8') as f:
@@ -116,12 +119,12 @@ print(new_train_x.shape)
 #开始创建LDA模型
 lda = LatentDirichletAllocation(n_components=100,max_iter=800,random_state=1)
 lda.fit(new_train_x)
-def load_lda(path):
-    with open(path,'rb') as f:
-        lda = pickle.loads(f.read())
-    return lda
-
-lda = load_lda('./lda_model.pkl')
+# def load_lda(path):
+#     with open(path,'rb') as f:
+#         lda = pickle.loads(f.read())
+#     return lda
+#
+# lda = load_lda('./lda_model.pkl')
 
 lda_feature = lda.transform(new_train_x)
 print(lda_feature[0])
