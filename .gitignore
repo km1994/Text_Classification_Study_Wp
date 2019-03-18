@@ -21,3 +21,4 @@ task/.idea/*
 *.bz2
 *.word
 *.pkl
+.ipynb_checkpoints
