@@ -1,5 +1,10 @@
 #  Local .terraform directories
 **/.terraform/*
+**/w2v_model/
+**/saved/
+**/runs/
+**/.idea/
+**/__pycache__/
 
 # .tfstate files
 *.tfstate
@@ -22,3 +27,7 @@ task/.idea/*
 *.word
 *.pkl
 .ipynb_checkpoints
+*.tsv
+*.neg
+*.pos
+

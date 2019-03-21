@@ -77,6 +77,8 @@ def train():
     # 载入训练集与验证集
     start_time = time.time()
     x_train, y_train = process_file(train_dir, word_to_id, cat_to_id, config.seq_length)
+    print("x_train[0:1]：{0}".format(x_train[0:1]))
+    print("len(x_train[0]):{0}".format(len(x_train[0])))
     x_val, y_val = process_file(val_dir, word_to_id, cat_to_id, config.seq_length)
     time_dif = get_time_dif(start_time)
     print("Time usage:", time_dif)
