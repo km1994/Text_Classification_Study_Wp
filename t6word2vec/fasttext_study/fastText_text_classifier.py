@@ -1,4 +1,13 @@
-# -*- coding:utf-8 -*-
+# encoding = utf8
+'''
+    @Author: King
+    @Date: 2019.03.16
+    @Purpose: 自然语言处理基础知识学习
+    @Introduction:  自然语言处理基础知识学习
+    @Datasets: THUCNews 情感分析数据集
+    @Link : 
+    @Reference : 
+'''
 import pandas as pd
 import random
 import fasttext

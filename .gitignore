@@ -5,6 +5,7 @@
 **/runs/
 **/.idea/
 **/__pycache__/
+**/.ipynb_checkpoints/
 
 # .tfstate files
 *.tfstate
@@ -26,7 +27,6 @@ task/.idea/*
 *.bz2
 *.word
 *.pkl
-.ipynb_checkpoints
 *.tsv
 *.neg
 *.pos

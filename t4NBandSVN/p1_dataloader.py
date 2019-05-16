@@ -1,6 +1,5 @@
 # coding: utf-8
 
-
 from collections import Counter
 import jieba
 import numpy as np

@@ -19,3 +19,4 @@ lstm：[从LSTM到Seq2Seq-大数据算法](https://x-algo.cn/index.php/2017/01/1
 RCNN kreas：[GitHub - airalcorn2/Recurrent-Convolutional-Neural...](https://github.com/airalcorn2/Recurrent-Convolutional-Neural-Network-Text-Classifier)
 RCNN tf：[GitHub - zhangfazhan/TextRCNN: TextRCNN 文本分类](https://github.com/zhangfazhan/TextRCNN)
 RCNN tf (推荐)：[GitHub - roomylee/rcnn-text-classification: Tensor...](https://github.com/roomylee/rcnn-text-classification)
+
