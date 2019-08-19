@@ -59,16 +59,13 @@ def read_file(filename,demo_flag = False):
     contents_num = 0
     with open_file(filename) as f:
         for line in f:
-            try:
-                label, content = line.strip().split('\t')
-                if content:
-                    contents.append(''.join(list(native_content(content))))
-                    labels.append(native_content(label))
-                contents_num = contents_num + 1
-                if demo_flag and contents_num == 1000:
-                    break
-            except:
-                pass
+            label, content = line.strip().split('\t')
+            if content:
+                contents.append(''.join(list(native_content(content))))
+                labels.append(native_content(label))
+            contents_num = contents_num + 1
+            if demo_flag and contents_num == 1000:
+                break
     return contents, labels
 
 # 数据写入
@@ -106,6 +103,7 @@ def write_feature_dict_file(filename,contents):
 '''
     文件读写 end
 '''
+
 
 '''
     文本分词 begin
